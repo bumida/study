@@ -1,1 +1,23 @@
-/bin/
+touch .gitignore
+# 예시 규칙 넣기
+cat >> .gitignore << 'EOF'
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# Build
+target/
+build/
+out/
+.gradle/
+
+# Logs
+*.log
+EOF
