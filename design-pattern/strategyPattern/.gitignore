@@ -1,23 +1,13 @@
-touch .gitignore
-# 예시 규칙 넣기
-cat >> .gitignore << 'EOF'
-# macOS
-.DS_Store
+# Eclipse / Workspace
+.metadata/
+.settings/
+.project
+.classpath
+bin/
+bin/strategyPattern/
 
-# IDE
+# (옵션) macOS & IDE 자주 쓰는 것들
+.DS_Store
 .idea/
 *.iml
 .vscode/
-.project
-.classpath
-.settings/
-
-# Build
-target/
-build/
-out/
-.gradle/
-
-# Logs
-*.log
-EOF
